@@ -1,3 +1,7 @@
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  pigeon_list = {}
+  data.reduce({}) do |memo, (key, value)|
+    memo[key] = value.sort
+    pp memo
+  end
 end
